@@ -5,9 +5,7 @@ import pea.ga.World;
 public class HillClimbingStrategy implements AcceptanceStrategy {
     @Override
     public boolean accept(double fitnessOld, double fitnessNew) {
-        System.out.println("new " + fitnessNew + " old " + fitnessOld);
-        //return fitnessNew > fitnessOld;
-        return true;
+        return fitnessNew > fitnessOld;
     }
 
     @Override
